@@ -88,6 +88,9 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+    #my-text {
+        margin: auto;
+    }
 }
 
 #contacts-container {

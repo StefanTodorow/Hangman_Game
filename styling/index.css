@@ -54,7 +54,6 @@ main #main-container {
     flex-direction: column;
     background-color: rgba(78, 161, 117, 0.3);
     width: 50%;
-    min-width: 400px;
     margin: auto;
     margin-top: 60px;
     height: 500px;
@@ -76,7 +75,7 @@ main #main-container {
     font-size: 4vw;
 }
 
-#letter-typein {
+#letter-type-in {
     margin: auto;
 }
 
@@ -96,6 +95,23 @@ main #main-container {
     background-color: rgba(210,105,30, 0.2);
     border-radius: 15px;
     font-weight: 900;
+}
+
+@media (max-width: 730px) {
+    #letter-type-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #input {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    #label {
+        font-size: 15px;
+    }
 }
 
 .anim:hover {
