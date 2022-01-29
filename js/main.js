@@ -72,3 +72,8 @@ button.addEventListener('click', function() {
         endText.innerHTML = 'Congratulations! You guessed the word!';
     }
 })
+
+
+// make few more funcs to clear main.js
+// get elements from html in a better way
+// make new consts from an API
