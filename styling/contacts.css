@@ -1,0 +1,176 @@
+body {
+    background-image: url(../pictures/background-image.png);
+    font-family: monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, #fffbd5, chocolate);
+    border-radius: 10px;
+    height: 50px;
+}
+
+nav .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Lobster, monospace;
+    color: rgb(46, 45, 17);
+    font-size: 20px;
+    width: 30%;
+}
+
+nav .nav-btn:hover {
+    color: rgb(110, 108, 41);
+    border-bottom: 5px solid rgb(83, 81, 31);
+}
+
+header {
+    font-family: Lobster, monospace;
+    color: chocolate;
+    text-align: center;
+    font-size: 30px;
+}
+
+header #headline {
+    animation-name: flash;
+    animation-duration: 300ms;
+    animation-iteration-count: 2;
+    animation-delay: 500ms;
+}
+
+@keyframes flash {
+    50% {
+        color: rgb(255, 179, 125);
+    }
+}
+
+hr {
+    width: 90%;
+    height: 3px;
+    background-color: rgba(143, 138, 135, 0.2);
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(109, 100, 97);
+}   
+
+a:hover {
+    color: rgb(160, 149, 145);
+}
+
+#about-me {
+    margin: auto;
+    display: flex;
+    width: 60%;
+    background-color: transparent;
+}
+
+#my-picture {
+    height: auto;
+    width: 20vw;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(78, 161, 117, 0.3);
+}
+
+#my-text {
+    text-align: justify;
+    margin-left: 30px;
+}
+
+@media (max-width: 850px) {
+    #about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#contacts-container {
+    width: 20%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.contacts-btn:hover {
+    animation-name: pop-up;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pop-up {
+    100% {
+        transform: scale(1.3);
+        border-bottom: 3px solid rgba(78, 161, 117, 0.3);
+    }
+}
+
+/* add media query for About me section - make image and text smaller and text below image */
+
+#form-div {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(78, 161, 117, 0.3);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.6);
+}
+
+#input-container {
+    text-align: center;
+}
+
+.inputs {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#submit-btn {
+    background-color: rgba(78, 161, 117, 0.3);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 40px;
+    border-width: 5px;
+    font-weight: 900;
+}
+
+#submit-btn:hover {
+    animation-name: sbm-btn;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes sbm-btn {
+    100% {
+        background-color: rgba(11, 31, 20, 0.5);
+        color: #fffbd5;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 100px;
+}
+
+#copyright {
+    margin-top: 50px;
+    text-align: center;
+}

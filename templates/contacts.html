@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styling/contacts.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="headline">Contacts</h1>
+    </header>
+    <nav>
+        <button class="nav-btn"onClick="window.location.href='./index.html';">Play game</button>
+        <button class="nav-btn" onClick="window.location.href='./rules.html';">Rules</button>
+        <button class="nav-btn" onClick="window.location.href='./contact.html';">Contacts</button>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <h2>About me</h2>
+            </div>
+            <hr>
+            <br>
+            <div id="about-me">
+                <div>
+                    <img id="my-picture" src="../pictures/myPicture.jpg" alt="Image of Stefan Todorov with glasses.">
+                </div>
+                <div id="my-text">
+                    <h3 style="font-size: 20px;">Hi, my name is Stefan Todorov. I studied C++ at 
+                        <a href="https://softuni.bg/">SoftUni</a> for 1 year, 
+                        a little bit of C and now I am studying at <a href="https://www.tu-sofia.bg/">
+                        Technical University of Sofia</a> first year. On the side
+                        I study Front-end development at <a href="https://www.freecodecamp.org/">
+                        freecodecamp.org</a> HTML, CSS, JavaScript.
+                        I want to continue develop myself in the Front-end area and sometime
+                        soon Back-end. I study and practice 12 hours a day if I have the time,
+                        which maybe makes me studyholic...anyways, I love coding, reading and
+                        working on ideas with my friends. I learn and adapt fast hard concepts
+                        and subjects as long as I consider them interesting. I am member of
+                        <a href="http://www.mensa.bg/">Mensa Bulgaria</a> since 06/01 and I enjoy spending time with other 
+                        members.</h3>
+                </div>
+            </div>
+            <br>
+            <hr>
+        </section>
+        <section>
+            <div>
+                <h2>My contacts</h2>
+            </div>
+            <div id="contacts-container">
+                <button type="button" class="contacts-btn"  
+                onclick="location.href='https://www.facebook.com/stefan.todorov.399'">
+                    <img src="../pictures/fbBtnImg.png" class="btn-img" alt="facebook-button">
+                </button>
+                <button type="button" class="contacts-btn" 
+                onclick="location.href='https://www.instagram.com/itsudattekimitofutarideitayone/'">
+                    <img src="../pictures/instagramBtnImg.png" class="btn-img" alt="instagram-button">
+                </button>
+                <button type="button" class="contacts-btn" 
+                onclick="location.href='https://www.linkedin.com/in/stefan-todorov-357a5319a/'">
+                    <img src="../pictures/linkedInBtnImg.png" class="btn-img" alt="linkedin-button">
+                </button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <h2>Send me a message</h2>
+                </div>
+                <div id="form-div">
+                    <form action="#" id="input-container">
+                        <div>
+                            <label for="name"></label>
+                            <br>
+                            <input class="inputs" type="text" name="name" id="name" placeholder="Name...*" required>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="name"></label>
+                            <br>
+                            <input class="inputs" type="email" name="email" id="email" placeholder="Email...*" required>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="subject"></label>
+                            <br>
+                            <input class="inputs" type="text" name="subject" id="subject" placeholder="Subject...">
+                        </div>
+                        <hr>
+                        <div>
+                            <label  for="message"></label>
+                            <br>
+                            <textarea class="inputs" name="message" style="resize: none;" id="message" 
+                            cols="30" rows="10" placeholder="Please enter your message...*" required></textarea>
+                        </div>
+                        <hr>
+                        <div>
+                            <button type="submit" id="submit-btn">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="copyright">&copy; 2022 Stefan Todorov</div>
+    </footer>
+</body>
+</html>

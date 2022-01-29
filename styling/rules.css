@@ -1,0 +1,79 @@
+body {
+    background-image: url(../pictures/background-image.png);
+    font-family: monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, #fffbd5, chocolate);
+    border-radius: 10px;
+    height: 50px;
+}
+
+nav .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Lobster, monospace;
+    color: rgb(46, 45, 17);
+    font-size: 20px;
+    width: 30%;
+}
+
+nav .nav-btn:hover {
+    color: rgb(110, 108, 41);
+    border-bottom: 5px solid rgb(83, 81, 31);
+}
+
+header {
+    font-family: Lobster, monospace;
+    color: chocolate;
+    text-align: center;
+    font-size: 30px;
+}
+
+header #headline {
+    animation-name: flash;
+    animation-duration: 300ms;
+    animation-iteration-count: 2;
+    animation-delay: 500ms;
+}
+
+@keyframes flash {
+    50% {
+        color: rgb(255, 179, 125);
+    }
+}
+
+main {
+    margin-top: 70px;
+}
+
+hr {
+    width: 40%;
+    height: 3px;
+    background-color: rgba(143, 138, 135, 0.2);
+    border: none;
+}
+
+#rules {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(78, 161, 117, 0.3);
+}
+
+h2 {
+    color: rgb(46, 45, 17);
+    font-size: 40px;
+}
+
+h4 {
+    margin-top: 40px;
+}
+
+#copyright {
+    margin-top: 170px;
+    text-align: center;
+}

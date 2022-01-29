@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styling/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="headline">Welcome to my Hangman game!</h1>
+    </header>
+    <nav>
+        <button class="nav-btn"onClick="window.location.href='./index.html';">Play game</button>
+        <button class="nav-btn" onClick="window.location.href='./rules.html';">Rules</button>
+        <button class="nav-btn" onClick="window.location.href='./contacts.html';">Contacts</button>
+    </nav>
+    <main>
+        <section>
+            <div id="main-container">
+                <h2 class="center-text" id="show-lives"></h2>
+                <h2 class="center-text" id="show-used-letters"></h2>
+                <div id="word">
+                    <h2 id="hiddenWord"></h2>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div id="letter-typein">
+                        <label for="inputLetter" id="label">Type your letter:</label>
+                        <input type="text" class="anim" id="input" maxlength="1" placeholder="A-z">
+                        <button id="button" class="anim">Enter</button>
+                        <h2 id="end-text" style="font-size: 30px;"></h2>
+                </div>
+            </div>
+        </section>
+            <div><center><h4 style="margin-top: 60px;">If you have any issues with the game or want to report a bug, 
+            please contact me in the Contacts page. Thank you!</h4></center>
+            </div>
+    </main>
+    <footer>
+        <div id="copyright">&copy; 2022 Stefan Todorov</div>
+    </footer>
+</body>
+<script src="../js/main.js" type="module"></script>
+</html>
