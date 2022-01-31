@@ -9,6 +9,8 @@ nav {
     background-image: linear-gradient(180deg, #fffbd5, chocolate);
     border-radius: 10px;
     height: 50px;
+    position: sticky;
+    top: 0;
 }
 
 nav .nav-btn {
