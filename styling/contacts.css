@@ -89,7 +89,7 @@ a:hover {
         align-items: center;
     }
     #my-text {
-        margin: auto;
+        margin-left: 0;
     }
 }
 

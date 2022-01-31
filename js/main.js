@@ -87,6 +87,7 @@ function addFirstAndLastLetter() {
 }
 
 // display ending scene by removing and adding elements
+// if player lost all of his lives
 function badEnding() {
     label.remove();
         input.remove();
@@ -94,6 +95,7 @@ function badEnding() {
         endText.innerHTML = 'You died. The word was: ' + currentWord;
         animateEnding();
 }
+// if player guessed the word
 function goodEnding() {
     label.remove();
         input.remove();
