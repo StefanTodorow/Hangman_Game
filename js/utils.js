@@ -5,7 +5,7 @@ export function getRandomInt(max) {
 
 // hides the middle chars of currentWord
 export function hideChars(currentWord) {
-    var array = currentWord.split('');
+    let array = currentWord.split('');
     for (let index = 1; index < currentWord.length - 1; index++) {
         array[index] = '_';
     }
@@ -24,7 +24,7 @@ export function isLetter(char) {
 
 // reveals letter if guessed correct
 export function showLetter(currWord, displayWord, letter) {
-    var array = displayWord.split('');
+    let array = displayWord.split('');
     for (let index = 1; index < currWord.length - 1; index++) {
         if(currWord[index] === letter) {
             array[index] = letter;
@@ -39,3 +39,4 @@ export function checkFirstAndLast(currentWord, displayWord) {
     displayWord = showLetter(currentWord, displayWord, currentWord[currentWord.length-1]);
     return displayWord;
 }
+
